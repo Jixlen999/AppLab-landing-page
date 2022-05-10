@@ -1,0 +1,385 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+    color: #242f51;
+}
+.container {
+    width: 80%;
+    margin-left: 10%;
+    padding-top: 5vh;
+}
+button {
+    background-color: #2500F9;
+    color: white;
+    font-weight: 600;
+    border: none;
+    border-radius: 30px;
+    width: 150px;
+    padding: 7px;
+    border: 2px solid #2500F9;
+    &:hover {
+        cursor: pointer;
+        background-color: #fff;
+        color: #2500F9;
+        border: 2px solid #2500F9;
+    }
+}
+
+header {
+    #top {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        flex-wrap: wrap;
+        #logo {
+            display: inline-block;
+            padding-top: 20px;
+        }
+        #navigation {
+            width: 45vw;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            flex-wrap: wrap;
+            color: #242f51;
+            li {
+                list-style: none;
+                &:hover {
+                    cursor: pointer;
+                }
+            }
+        }
+    }
+    
+}
+
+#first_page {
+    height: auto;
+    background:  url("/assests/Vector\ Smart\ Object\ \(1\).png") center no-repeat, url("/assests/Layer\ 3.png")  no-repeat, url("/assests/First_Page_Layer.png")  bottom no-repeat;
+    background-size: contain;
+    .main_part {
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        #promo {
+            width: 55%;
+            #editors_choice {
+                background-color: #E2EAED;
+                width: 56%;
+                border-radius: 30px;
+                display: flex;
+                align-items: center;
+                i {
+                    display: inline-block;
+                    background-color: #FEAA25;
+                    border-radius: 100%;
+                    padding: 5px;
+                    color: white;
+                }
+                p {
+                    margin-left: 10px;
+                    display: inline-block;
+                }
+            }
+            .main_text {
+                h1 {
+                    margin-top: 20px;
+                    font-weight: 600;
+                    font-size: 60px;
+                    line-height: 12vh;
+                    color: #242f51;
+                }
+                p {
+                    margin-top: 20px;
+                    font-size: 18px;
+                }
+            }  
+            .buttons {
+                width: 60%;
+                margin-top: 20px;
+                display: flex;
+                align-items: center;
+                justify-content: space-between;
+                p {
+                    color: #2500F9;
+                    &:hover {
+                        cursor: pointer;
+                    }
+                }
+            }
+        }
+        .mobile_pic {
+            width: 30%;
+        }
+    } 
+}
+#trusted { 
+    margin-top: 30px;
+    text-align: center;
+    h3 {
+        font-size: 16px;
+    }
+    ul {
+        width: 90%;
+        margin-top: 20px;
+        padding-left: 5%;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        li {
+            list-style: none;
+        }
+    }
+}
+
+#features {
+    margin-top: 100px;
+    .container {
+        margin-top: 50px;
+        display: flex;
+        justify-content: space-around;
+        #mobile_layer {
+            height: auto;
+            width: auto;
+            background: url("/assests/Shape\ 1.png") bottom no-repeat, url("/assests/Ellipse\ 1\ copy\ 2.png") 0% 85%/60% no-repeat, url("/assests/Ellipse\ 1.png") center left/90% no-repeat;
+            .mobile_pic {
+                width: 90%;
+            }
+        }
+        .awesome_features {
+            width: 40%;
+            .heading_text {
+                h2 {
+                    font-weight: 600;
+                    font-size: 36px;
+                }
+            }
+            .articles {
+                display: flex;
+                flex-direction: column;
+                margin-top: 40px;
+                h3 {
+                    font-size: 20px;
+                    font-weight: 600;
+                }
+                article {
+                    margin-top: 30px;
+                    margin-bottom: 30px;
+                    display: flex;
+                    align-items: center;
+                    justify-content: space-between;
+                    .article_pic {
+                        border-radius: 50px;
+                        display: inline-block;
+                        padding: 10px;
+                        img {
+                            display: inline-block;
+                        }
+                    }
+                    .article_text {
+                        width: 75%;
+                    }
+                }
+                .first_article { 
+                    .article_pic {
+                        background-color: #FFECEF;
+                    }
+                    .article_text {
+                        h3 {
+                            color: #f55767;
+                        }
+                    }
+                    
+                }
+                .second_article { 
+                    .article_pic {
+                        background-color: #F4F4FF;
+                    }
+                    h3 {
+                        color: #2563ff;
+                    }
+                }
+                .third_article { 
+                    .article_pic {
+                        background-color: #E4FFEE;
+                    }
+                    h3 {
+                        color: #40975f;
+                    }
+                }                
+            }
+        }
+    }
+        
+}
+
+#smart_jackpots {
+    .container {
+        display: flex;
+        align-items: center;
+        margin-top: 50px;
+        .jackpots_heading {
+            padding-right: 45px;
+            border-right: 1px solid #B9B9B8;
+            h1 {
+                font-size: 40px;
+                font-weight: 600;
+            } 
+        }
+        .jackpots_text {
+            padding-left: 50px;
+            
+        }
+    }
+}
+
+#pros {
+    .container {
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        margin-top: 70px;
+        h2 {
+            font-weight: 600;
+            font-size: 20px;
+            margin-bottom: 10px;
+        }
+        .article_pic {
+            border-radius: 100%;
+            display: inline-block;
+            padding: 10px;
+            margin-bottom: 20px;
+        }
+        .payouts {
+            margin-right: 50px;
+            h2 {
+                color: #f55767;
+            }
+            .article_pic {
+                background-color: #FFECEF;
+            }
+        }
+        .network {
+            margin-right: 50px;
+            h2 {
+                color: #2563ff;
+            }
+            .article_pic {
+                background-color: #F4F4FF;
+            }
+        }
+        .rewards {
+            margin-right: 50px;
+            h2 {
+                color: #40975f;
+            }
+            .article_pic {
+                background-color: #E4FFEE;
+            }
+        }
+    }
+}
+
+#code_integration {
+    border-bottom: 1.5px solid #f1f1ee;
+    padding-bottom: 50px;
+    .container {
+        margin-top: 70px;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        .code_pic {
+            margin-right: 70px;
+            img {
+                width: 500px;
+            }
+        }
+        .code_text_section {
+            width: 40%;
+            h1 {
+                font-size: 36px;
+                font-weight: 600;
+                margin-bottom: 20px;
+            }
+            button {
+                margin-top: 30px;
+            }
+        }
+    }
+}
+
+#why_us {
+    .container {
+        text-align: center;
+        margin-top: 50px;
+        .heading_part {
+            margin-bottom: 70px;
+            h1 {
+                font-weight: 600;
+                font-size: 36px;
+            }
+        }
+        .reasons {
+            display: flex;
+            justify-content: space-between;
+            flex-wrap: wrap;
+            .reason {
+                flex: 0 1 calc(100% / 3 - 15px);
+                margin-bottom: 40px;
+                max-width: 30%;
+                h3 {
+                    font-size: 20px;
+                    font-weight: 600;
+                    margin-bottom: 7px;
+                }
+                .article_pic {
+                    display: inline-block;
+                    border-radius: 100%;
+                    padding: 13px;
+                }
+            }
+            .first_reason {
+                .article_pic {
+                    background-color: #FFECEF;
+                }
+            }
+            .second_reason {
+                .article_pic {
+                    background-color: #EAF9FF;
+                }
+            }
+            .third_reason {
+                .article_pic {
+                    background-color: #FFF6D3;
+                }
+            }
+            .fourth_reason {
+                .article_pic {
+                    background-color: #E4FFEE;
+                }
+            }
+            .fifth_reason {
+                .article_pic {
+                    background-color: #F4F4FF;
+                }
+            }
+            .sixth_reason {
+                .article_pic {
+                    background-color: #FDEEE4;
+                }
+            }
+        }
+    }
+}
+
+footer {
+    background: #242F51;
+    color: #fafafa;
+    text-align: center;
+}
